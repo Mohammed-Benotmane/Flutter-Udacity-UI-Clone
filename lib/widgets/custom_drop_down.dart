@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CustomDropDown extends StatelessWidget {
+  final String title;
+
+  CustomDropDown(this.title);
+
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton(
       child: Row(
         children: [
           Text(
-            'Programs',
+            title,
             style: TextStyle(color: Colors.grey.shade700),
           ),
           Icon(
@@ -19,11 +23,11 @@ class CustomDropDown extends StatelessWidget {
       onSelected: (_) {},
       itemBuilder: (_) => [
         PopupMenuItem(
-          child: Text('Only Favorites'),
+          child: Text('test'),
           value: 'test',
         ),
         PopupMenuItem(
-          child: Text('Show All'),
+          child: Text('test'),
           value: 'test1',
         ),
       ],
