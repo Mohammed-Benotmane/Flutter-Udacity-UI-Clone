@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:udacity_clone/widgets/custom_drop_down.dart';
 
@@ -10,6 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -30,32 +32,45 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(width: 25),
                   Text(
                     'For Government',
-                    style: TextStyle(color: Colors.grey.shade700),
+                    style: TextStyle(
+                        color: Colors.grey.shade600,
+                        letterSpacing: 1,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(width: 25),
                   Container(
-                      height: 20,
-                      child: VerticalDivider(
-                        width: 1,
-                      )),
+                    height: 20,
+                    child: VerticalDivider(
+                      width: 1,
+                    ),
+                  ),
                   SizedBox(width: 25),
                   Text(
                     'Blog',
-                    style: TextStyle(color: Colors.grey.shade700),
+                    style: TextStyle(
+                        color: Colors.grey.shade600,
+                        letterSpacing: 1,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(width: 25),
                   TextButton(
                     onPressed: () {},
                     child: Text(
                       'MY CLASSROOM',
-                      style: TextStyle(color: Colors.white,fontSize: 12),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          letterSpacing: 1.5,
+                          fontWeight: FontWeight.w500),
                     ),
                     style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.blue[700]),
-                      padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20,vertical: 10)),
+                      padding: MaterialStateProperty.all<EdgeInsets>(
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
                       elevation: MaterialStateProperty.all<double>(5),
-                      shadowColor: MaterialStateProperty.all<Color>(Colors.blue[700]),
+                      shadowColor:
+                          MaterialStateProperty.all<Color>(Colors.blue[700]),
                     ),
                   ),
                 ],

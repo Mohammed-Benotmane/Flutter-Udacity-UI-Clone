@@ -12,11 +12,11 @@ class CustomDropDown extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(color: Colors.grey.shade700),
+            style: TextStyle(color: Colors.grey.shade600,letterSpacing: 1,fontWeight: FontWeight.w500),
           ),
           Icon(
             Icons.keyboard_arrow_down,
-            color: Colors.grey.shade700,
+            color: Colors.grey.shade600,
           ),
         ],
       ),
