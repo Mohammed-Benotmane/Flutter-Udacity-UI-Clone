@@ -44,11 +44,23 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(height: 40),
                       Row(
                         children: [
-                          CustomCard(),
+                          CustomCard(
+                            color: Colors.greenAccent,
+                            buttonText: 'For individuals',
+                            text: 'Transform your career.',
+                          ),
                           SizedBox(width: 10),
-                          CustomCard(),
+                          CustomCard(
+                            color: Colors.deepPurple,
+                            buttonText: 'For enterprise',
+                            text: 'Transform your buisness.',
+                          ),
                           SizedBox(width: 10),
-                          CustomCard(),
+                          CustomCard(
+                            color: Colors.amber,
+                            buttonText: 'For government',
+                            text: 'Transform your workforce.',
+                          ),
                         ],
                       ),
                     ],

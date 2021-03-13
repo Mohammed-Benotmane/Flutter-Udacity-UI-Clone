@@ -31,7 +31,7 @@ class CustomCard extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              buttonText,
+              buttonText.toUpperCase(),
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 12,
