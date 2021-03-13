@@ -9,7 +9,7 @@ class CustomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
       child: Row(
         children: [
           Image.asset(

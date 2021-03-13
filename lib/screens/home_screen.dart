@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             CustomNavBar(),
             Padding(
-              padding: const EdgeInsets.fromLTRB(60, 15, 0, 15),
+              padding: const EdgeInsets.fromLTRB(80, 15, 0, 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
