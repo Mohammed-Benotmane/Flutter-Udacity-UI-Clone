@@ -73,9 +73,16 @@ class _HomeScreenState extends State<HomeScreen> {
                           MaterialStateProperty.all<Color>(Colors.blue[700]),
                     ),
                   ),
+
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(60,15,0,15),
+              child: Row(
+                children: [],
+              ),
+            ),
           ],
         ),
       ),
