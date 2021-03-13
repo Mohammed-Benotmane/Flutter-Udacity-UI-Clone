@@ -14,17 +14,22 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.only(
+          topRight: Radius.circular(25), topLeft: Radius.circular(25)),
       child: Card(
         elevation: 6,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          ),
+        ),
         child: Column(
           children: [
             Container(
               width: 250,
               height: 7,
               color: color,
-
             ),
             SizedBox(height: 30),
             TextButton(
