@@ -37,6 +37,8 @@ class CustomCard extends StatelessWidget {
               child: Text(
                 buttonText.toUpperCase(),
                 style: TextStyle(
+                    fontFamily: 'OpenSans',
+
                     color: Colors.white,
                     fontSize: 12,
                     letterSpacing: 1.5,
@@ -44,17 +46,18 @@ class CustomCard extends StatelessWidget {
               ),
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all<Color>(Colors.blue[700]),
+                    MaterialStateProperty.all<Color>(Colors.blue[800]),
                 padding: MaterialStateProperty.all<EdgeInsets>(
                     EdgeInsets.symmetric(horizontal: 30, vertical: 25)),
                 elevation: MaterialStateProperty.all<double>(5),
-                shadowColor: MaterialStateProperty.all<Color>(Colors.blue[700]),
+                shadowColor: MaterialStateProperty.all<Color>(Colors.blue[800]),
               ),
             ),
             SizedBox(height: 25),
             Text(
               text,
               style: TextStyle(
+                fontFamily: 'OpenSans',
                 fontSize: 14,
                 color: Colors.grey[700],
               ),

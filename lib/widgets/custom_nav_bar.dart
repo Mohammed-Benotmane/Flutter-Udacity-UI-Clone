@@ -26,6 +26,7 @@ class CustomNavBar extends StatelessWidget {
           Text(
             'For Government',
             style: TextStyle(
+                fontFamily: 'OpenSans',
                 color: Colors.grey.shade600,
                 letterSpacing: 1,
                 fontWeight: FontWeight.w500),
@@ -41,6 +42,7 @@ class CustomNavBar extends StatelessWidget {
           Text(
             'Blog',
             style: TextStyle(
+                fontFamily: 'OpenSans',
                 color: Colors.grey.shade600,
                 letterSpacing: 1,
                 fontWeight: FontWeight.w500),
@@ -52,18 +54,19 @@ class CustomNavBar extends StatelessWidget {
               'GET STARTED',
               style: TextStyle(
                   color: Colors.white,
+                  fontFamily: 'OpenSans',
                   fontSize: 12,
                   letterSpacing: 1.5,
                   fontWeight: FontWeight.bold),
             ),
             style: ButtonStyle(
               backgroundColor:
-              MaterialStateProperty.all<Color>(Colors.blue[700]),
+              MaterialStateProperty.all<Color>(Colors.blue[800]),
               padding: MaterialStateProperty.all<EdgeInsets>(
                   EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
               elevation: MaterialStateProperty.all<double>(5),
               shadowColor:
-              MaterialStateProperty.all<Color>(Colors.blue[700]),
+              MaterialStateProperty.all<Color>(Colors.blue[800]),
             ),
           ),
         ],

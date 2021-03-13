@@ -17,7 +17,8 @@ class CustomBody extends StatelessWidget {
               Text(
                 'The latest digital skills,\nwithin reach.',
                 style: TextStyle(
-                  fontWeight: FontWeight.w900,
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.bold,
                   fontSize: 50,
                   color: Colors.grey[850],
                 ),
@@ -26,6 +27,7 @@ class CustomBody extends StatelessWidget {
               Text(
                 'Discover the fastest, most effective way to gain job-ready \nexpertise for the careers of the future.',
                 style: TextStyle(
+                  fontFamily: 'OpenSans',
                   fontSize: 20,
                   color: Colors.grey[700],
                 ),
