@@ -31,15 +31,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       'Explore our schools to find your perfect program',
                       style: TextStyle(
                           fontFamily: 'OpenSans',
-                          color: Colors.grey.shade600,
-                          letterSpacing: 1,
-                          fontWeight: FontWeight.w500),
+                          color: Colors.grey.shade900,
+                          fontSize: 28,
+                          fontWeight: FontWeight.w600,
+                      ),
                     )
                   ],
                 ),
               )
             ],
-
         ),
       ),
     );

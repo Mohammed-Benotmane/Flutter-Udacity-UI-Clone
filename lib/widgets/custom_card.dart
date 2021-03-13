@@ -17,11 +17,11 @@ class CustomCard extends StatelessWidget {
       borderRadius: BorderRadius.only(
           topRight: Radius.circular(25), topLeft: Radius.circular(25)),
       child: Card(
-        elevation: 6,
+        elevation: 10,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(20),
-            bottomRight: Radius.circular(20),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
           ),
         ),
         child: Column(
