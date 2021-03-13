@@ -49,12 +49,12 @@ class CustomNavBar extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              'MY CLASSROOM',
+              'GET STARTED',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 12,
                   letterSpacing: 1.5,
-                  fontWeight: FontWeight.w500),
+                  fontWeight: FontWeight.bold),
             ),
             style: ButtonStyle(
               backgroundColor:

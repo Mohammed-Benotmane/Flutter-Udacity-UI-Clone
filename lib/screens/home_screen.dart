@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.grey[700],
                         ),
                       ),
+                      SizedBox(height: 40),
                       Row(
                         children: [
                           Card(
@@ -48,15 +49,41 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Column(
                               children: [
                                 Container(
-                                  width: 200,
-                                  height: 5,
+                                  width: 250,
+                                  height: 7,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.only(
                                         topLeft: Radius.circular(25),
                                         topRight: Radius.circular(25)),
                                     color: Colors.yellow,
                                   ),
-                                )
+                                ),
+                                SizedBox(height: 30),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'FOR INDIVIDUALS',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        letterSpacing: 1.5,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.blue[700]),
+                                    padding:
+                                        MaterialStateProperty.all<EdgeInsets>(
+                                            EdgeInsets.symmetric(
+                                                horizontal: 30, vertical: 25)),
+                                    elevation:
+                                        MaterialStateProperty.all<double>(5),
+                                    shadowColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.blue[700]),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
