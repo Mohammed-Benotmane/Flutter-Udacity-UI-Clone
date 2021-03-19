@@ -23,22 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               CustomNavBar(),
               CustomBody(),
-              Padding(
-                padding: const EdgeInsets.all(80),
-                child: Column(
-                  children: [
-                    Text(
-                      'Explore our schools to find your perfect program',
-                      style: TextStyle(
-                          fontFamily: 'OpenSans',
-                          color: Colors.grey.shade900,
-                          fontSize: 28,
-                          fontWeight: FontWeight.w600,
-                      ),
-                    )
-                  ],
-                ),
-              )
             ],
         ),
       ),
