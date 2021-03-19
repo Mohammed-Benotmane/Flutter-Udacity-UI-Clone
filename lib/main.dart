@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/screens/authentication_screen.dart';
 import 'package:udacity_clone/screens/home_screen.dart';
 
 void main() {
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/':(ctx)=>HomeScreen(),
-
+        HomeScreen.routeName:(ctx)=>HomeScreen(),
+        AuthenticationScreen.routeName:(ctx)=>AuthenticationScreen(),
       },
     );
   }

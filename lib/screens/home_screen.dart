@@ -10,22 +10,15 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
-    return Scrollbar(
-      controller: _scrollController,
-      isAlwaysShown: true,
-      thickness: 10,
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        body: ListView(
-          controller: _scrollController,
-            children: [
-              CustomNavBar(),
-              CustomBody(),
-            ],
-        ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+          children: [
+            CustomNavBar(),
+            CustomBody(),
+          ],
       ),
     );
   }

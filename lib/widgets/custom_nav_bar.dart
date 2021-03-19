@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/screens/authentication_screen.dart';
 import 'package:udacity_clone/widgets/custom_drop_down.dart';
 
 class CustomNavBar extends StatelessWidget {
@@ -10,15 +11,11 @@ class CustomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 10,
-      shadowColor: Colors.white,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
         child: Row(
           children: [
-            Image.asset(
-              'assets/udacity.png',
-              width: 200,
-            ),
+            Image.asset('assets/udacity.png', width: 200),
             Spacer(),
             CustomDropDown('Programs'),
             SizedBox(width: 25),
@@ -52,7 +49,8 @@ class CustomNavBar extends StatelessWidget {
             ),
             SizedBox(width: 25),
             TextButton(
-              onPressed: () {},
+              onPressed: () => Navigator.of(context)
+                  .pushNamed(AuthenticationScreen.routeName),
               child: Text(
                 'GET STARTED',
                 style: TextStyle(
@@ -64,12 +62,11 @@ class CustomNavBar extends StatelessWidget {
               ),
               style: ButtonStyle(
                 backgroundColor:
-                MaterialStateProperty.all<Color>(Colors.blue[800]),
+                    MaterialStateProperty.all<Color>(Colors.blue[800]),
                 padding: MaterialStateProperty.all<EdgeInsets>(
                     EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
                 elevation: MaterialStateProperty.all<double>(5),
-                shadowColor:
-                MaterialStateProperty.all<Color>(Colors.blue[800]),
+                shadowColor: MaterialStateProperty.all<Color>(Colors.blue[800]),
               ),
             ),
           ],
