@@ -4,6 +4,7 @@ import 'package:udacity_clone/widgets/custom_body.dart';
 import 'package:udacity_clone/widgets/custom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const routeName='/';
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
