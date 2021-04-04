@@ -13,6 +13,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: ListView(
         children: [
           CustomAuthNavBar(),
@@ -50,7 +51,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                           padding: EdgeInsets.symmetric(vertical: 20),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
+                            color: Colors.grey.shade50,
                             border: Border(
                               left: BorderSide(
                                   width: 1, color: Colors.grey.shade300),
@@ -75,10 +76,26 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                   Text(
                     'Create your account',
                     style: TextStyle(
-                      color: Colors.grey.shade800,
+                      fontFamily: 'OpenSans',
                       fontSize: 36,
-                      letterSpacing: 1.5,
+                      color: Colors.grey[850],
                     ),
+                  ),
+                  SizedBox(height: 30),
+                  Text(
+                    'Build skills for today, tomorrow, and beyond.\nEducation to future-proof your career.',
+                    style: TextStyle(
+                      fontFamily: 'OpenSans',
+                      fontSize: 16,
+                      color: Colors.grey[850],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(height: 15),
+                  Row(
+                    children: [
+                      AuthButton(),
+                    ],
                   ),
                 ],
               ),
@@ -89,3 +106,4 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
     );
   }
 }
+
