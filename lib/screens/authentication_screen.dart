@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/widgets/auth_button.dart';
 import 'package:udacity_clone/widgets/custom_auth_nav_bar.dart';
 
 class AuthenticationScreen extends StatefulWidget {
@@ -76,9 +76,10 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                   Text(
                     'Create your account',
                     style: TextStyle(
-                      fontFamily: 'OpenSans',
+                      color: Colors.grey.shade800,
                       fontSize: 36,
-                      color: Colors.grey[850],
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.w100
                     ),
                   ),
                   SizedBox(height: 30),
@@ -91,12 +92,21 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 20),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      AuthButton(),
+                      AuthButton(
+                        'assets/googlelogo.png',
+                        'Sign up with Google',
+                      ),
+                      AuthButton(
+                        'assets/facebooklogo.png',
+                        'Sign up with Facebook',
+                      ),
                     ],
                   ),
+                  SizedBox(height: 20),
                 ],
               ),
             ),
@@ -106,4 +116,3 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
     );
   }
 }
-

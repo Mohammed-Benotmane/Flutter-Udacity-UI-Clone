@@ -1,7 +1,10 @@
+import 'package:flutter/material.dart';
+
 class AuthButton extends StatelessWidget {
-  const AuthButton({
-    Key key,
-  }) : super(key: key);
+  final String logo;
+  final String buttonText;
+
+  AuthButton(this.logo, this.buttonText);
 
   @override
   Widget build(BuildContext context) {
@@ -9,10 +12,10 @@ class AuthButton extends StatelessWidget {
       onPressed: () {},
       child: Row(
         children: [
-          Image.asset('assets/googlelogo.png', width: 25),
+          Image.asset(logo, width: 25),
           SizedBox(width: 10),
           Text(
-            'Sign up with Google',
+            buttonText,
             style: TextStyle(
               color: Colors.grey.shade700,
               fontFamily: 'OpenSans',
@@ -22,11 +25,9 @@ class AuthButton extends StatelessWidget {
       ),
       style: ButtonStyle(
           padding: MaterialStateProperty.all<EdgeInsets>(
-            EdgeInsets.symmetric(
-                horizontal: 40, vertical: 20),
+            EdgeInsets.symmetric(horizontal: 40, vertical: 20),
           ),
-          backgroundColor:
-          MaterialStateProperty.all<Color>(Colors.white)),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.white)),
     );
   }
 }
