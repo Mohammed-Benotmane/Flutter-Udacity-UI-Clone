@@ -10,18 +10,21 @@ class AuthButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {},
-      child: Row(
-        children: [
-          Image.asset(logo, width: 25),
-          SizedBox(width: 10),
-          Text(
-            buttonText,
-            style: TextStyle(
-              color: Colors.grey.shade700,
-              fontFamily: 'OpenSans',
-            ),
-          )
-        ],
+      child: Container(
+        width: 200,
+        child: Row(
+          children: [
+            Image.asset(logo, width: 25),
+            SizedBox(width: 10),
+            Text(
+              buttonText,
+              style: TextStyle(
+                color: Colors.grey.shade700,
+                fontFamily: 'OpenSans',
+              ),
+            )
+          ],
+        ),
       ),
       style: ButtonStyle(
           padding: MaterialStateProperty.all<EdgeInsets>(

@@ -76,11 +76,10 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                   Text(
                     'Create your account',
                     style: TextStyle(
-                      color: Colors.grey.shade800,
-                      fontSize: 36,
-                      letterSpacing: 1,
-                      fontWeight: FontWeight.w100
-                    ),
+                        color: Colors.grey.shade800,
+                        fontSize: 36,
+                        letterSpacing: 1,
+                        fontWeight: FontWeight.w100),
                   ),
                   SizedBox(height: 30),
                   Text(
@@ -94,19 +93,46 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                   ),
                   SizedBox(height: 20),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       AuthButton(
                         'assets/googlelogo.png',
                         'Sign up with Google',
                       ),
+                      SizedBox(width: 20),
                       AuthButton(
                         'assets/facebooklogo.png',
                         'Sign up with Facebook',
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 30),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            color: Colors.grey.shade500,
+                            height: .3,
+                            margin: EdgeInsets.symmetric(horizontal: 10),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: Text('or',style: TextStyle(fontSize: 16),),
+                        ),
+                        Expanded(
+                            child: Container(
+                          color: Colors.grey.shade500,
+                          height: .3,
+                              margin: EdgeInsets.symmetric(horizontal: 10),
+                        ),
+                        ),
+                      ],
+                    ),
+                  ),
+
                 ],
               ),
             ),
