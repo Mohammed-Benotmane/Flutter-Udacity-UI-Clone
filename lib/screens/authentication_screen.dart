@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:udacity_clone/widgets/auth_button.dart';
 import 'package:udacity_clone/widgets/custom_auth_nav_bar.dart';
+import 'package:udacity_clone/widgets/custom_text_field.dart';
 
 class AuthenticationScreen extends StatefulWidget {
   static const routeName = '/authentication';
@@ -106,9 +107,9 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 30),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 35, vertical: 30),
                     child: Row(
                       children: [
                         Expanded(
@@ -120,19 +121,31 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: Text('or',style: TextStyle(fontSize: 16),),
+                          child: Text(
+                            'or',
+                            style: TextStyle(fontSize: 16),
+                          ),
                         ),
                         Expanded(
-                            child: Container(
-                          color: Colors.grey.shade500,
-                          height: .3,
-                              margin: EdgeInsets.symmetric(horizontal: 10),
-                        ),
+                          child: Container(
+                            color: Colors.grey.shade500,
+                            height: .3,
+                            margin: EdgeInsets.symmetric(horizontal: 10),
+                          ),
                         ),
                       ],
                     ),
                   ),
-
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 45),
+                    child: Form(
+                      child: Column(
+                        children: [
+                          CustomTextField(),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -142,3 +155,4 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
     );
   }
 }
+

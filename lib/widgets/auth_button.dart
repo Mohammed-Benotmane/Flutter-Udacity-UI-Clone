@@ -11,7 +11,7 @@ class AuthButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       child: Container(
-        width: 200,
+        width: 185,
         child: Row(
           children: [
             Image.asset(logo, width: 25),
