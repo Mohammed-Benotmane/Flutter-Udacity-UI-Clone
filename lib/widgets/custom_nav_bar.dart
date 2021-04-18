@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/const.dart';
 import 'package:udacity_clone/screens/authentication_screen.dart';
 import 'package:udacity_clone/widgets/custom_drop_down.dart';
 
@@ -60,11 +61,11 @@ class CustomNavBar extends StatelessWidget {
             ),
             style: ButtonStyle(
               backgroundColor:
-                  MaterialStateProperty.all<Color>(Colors.blue[800]),
+                  MaterialStateProperty.all<Color>(Const.udacityBlue),
               padding: MaterialStateProperty.all<EdgeInsets>(
                   EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
               elevation: MaterialStateProperty.all<double>(5),
-              shadowColor: MaterialStateProperty.all<Color>(Colors.blue[800]),
+              shadowColor: MaterialStateProperty.all<Color>(Const.udacityBlue),
             ),
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/const.dart';
 import 'package:udacity_clone/widgets/auth_button.dart';
 import 'package:udacity_clone/widgets/custom_auth_nav_bar.dart';
 import 'package:udacity_clone/widgets/custom_text_field.dart';
@@ -114,7 +115,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                       children: [
                         Expanded(
                           child: Container(
-                            color: Colors.grey.shade500,
+                            color: Colors.grey.shade700,
                             height: .3,
                             margin: EdgeInsets.symmetric(horizontal: 10),
                           ),
@@ -128,7 +129,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Colors.grey.shade500,
+                            color: Colors.grey.shade700,
                             height: .3,
                             margin: EdgeInsets.symmetric(horizontal: 10),
                           ),
@@ -141,18 +142,94 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                     child: Form(
                       child: Column(
                         children: [
-                          CustomTextField(),
+                          CustomTextField('First Name'),
+                          SizedBox(height: 15),
+                          CustomTextField('Last Name'),
+                          SizedBox(height: 15),
+                          CustomTextField('Email Address'),
+                          SizedBox(height: 15),
+                          CustomTextField('Password', isPassword: true),
                         ],
                       ),
                     ),
                   ),
+                  SizedBox(height: 15),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'By clicking Sign Up, you agree to our ',
+                        style: TextStyle(
+                          fontFamily: 'OpenSans',
+                          color: Colors.grey.shade600,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Text(
+                        'Terms of Use ',
+                        style: TextStyle(
+                          fontFamily: 'OpenSans',
+                          color: Const.udacityBlue,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Text(
+                        'and our ',
+                        style: TextStyle(
+                          fontFamily: 'OpenSans',
+                          color: Colors.grey.shade600,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Text(
+                        'Privacy Policy.',
+                        style: TextStyle(
+                          fontFamily: 'OpenSans',
+                          color: Const.udacityBlue,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 30),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'SIGN UP',
+                      style: TextStyle(
+                          fontFamily: 'OpenSans',
+                          color: Colors.white,
+                          fontSize: 12,
+                          letterSpacing: 1.5,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    style: ButtonStyle(
+                      backgroundColor:
+                      MaterialStateProperty.all<Color>(Const.udacityBlue),
+                      padding: MaterialStateProperty.all<EdgeInsets>(
+                          EdgeInsets.symmetric(horizontal: 25, vertical: 25)),
+                      elevation: MaterialStateProperty.all<double>(5),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                          )
+                      ),
+                      shadowColor: MaterialStateProperty.all<Color>(Const.udacityBlue),
+                    ),
+                  ),
+                  SizedBox(height: 30),
+
                 ],
               ),
             ),
           ),
+          SizedBox(height: 30),
         ],
       ),
     );
   }
 }
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udacity_clone/const.dart';
 
 class CustomCard extends StatelessWidget {
   final String buttonText;
@@ -46,11 +47,11 @@ class CustomCard extends StatelessWidget {
               ),
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all<Color>(Colors.blue[800]),
+                    MaterialStateProperty.all<Color>(Const.udacityBlue),
                 padding: MaterialStateProperty.all<EdgeInsets>(
                     EdgeInsets.symmetric(horizontal: 30, vertical: 25)),
                 elevation: MaterialStateProperty.all<double>(5),
-                shadowColor: MaterialStateProperty.all<Color>(Colors.blue[800]),
+                shadowColor: MaterialStateProperty.all<Color>(Const.udacityBlue),
               ),
             ),
             SizedBox(height: 25),
