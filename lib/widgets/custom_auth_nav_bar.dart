@@ -12,7 +12,10 @@ class CustomAuthNavBar extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 15),
         width: 200,
-        child: Image.asset('assets/udacity.png',height: 40,),
+        child: Image.asset(
+          'assets/udacity.png',
+          height: 40,
+        ),
       ),
     );
   }

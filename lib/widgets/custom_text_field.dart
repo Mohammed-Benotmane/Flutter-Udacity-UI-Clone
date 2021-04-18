@@ -4,7 +4,7 @@ class CustomTextField extends StatelessWidget {
   final String hint;
   final bool isPassword;
 
-  CustomTextField(this.hint,{this.isPassword=false});
+  CustomTextField(this.hint, {this.isPassword = false});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class CustomTextField extends StatelessWidget {
             width: 0.5,
           ),
         ),
-        suffixIcon:isPassword? Icon(Icons.remove_red_eye_outlined):null,
+        suffixIcon: isPassword ? Icon(Icons.remove_red_eye_outlined) : null,
       ),
     );
   }

@@ -4,7 +4,8 @@ import 'package:udacity_clone/widgets/custom_body.dart';
 import 'package:udacity_clone/widgets/custom_nav_bar.dart';
 
 class HomeScreen extends StatefulWidget {
-  static const routeName='/';
+  static const routeName = '/';
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -15,10 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
-          children: [
-            CustomNavBar(),
-            CustomBody(),
-          ],
+        children: [
+          CustomNavBar(),
+          CustomBody(),
+        ],
       ),
     );
   }

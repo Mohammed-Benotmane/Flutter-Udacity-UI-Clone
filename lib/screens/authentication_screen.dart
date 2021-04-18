@@ -209,20 +209,19 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                     ),
                     style: ButtonStyle(
                       backgroundColor:
-                      MaterialStateProperty.all<Color>(Const.udacityBlue),
+                          MaterialStateProperty.all<Color>(Const.udacityBlue),
                       padding: MaterialStateProperty.all<EdgeInsets>(
                           EdgeInsets.symmetric(horizontal: 25, vertical: 25)),
                       elevation: MaterialStateProperty.all<double>(5),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                          )
-                      ),
-                      shadowColor: MaterialStateProperty.all<Color>(Const.udacityBlue),
+                        borderRadius: BorderRadius.circular(10.0),
+                      )),
+                      shadowColor:
+                          MaterialStateProperty.all<Color>(Const.udacityBlue),
                     ),
                   ),
                   SizedBox(height: 30),
-
                 ],
               ),
             ),

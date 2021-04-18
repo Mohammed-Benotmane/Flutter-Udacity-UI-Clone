@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        HomeScreen.routeName:(ctx)=>HomeScreen(),
-        AuthenticationScreen.routeName:(ctx)=>AuthenticationScreen(),
+        HomeScreen.routeName: (ctx) => HomeScreen(),
+        AuthenticationScreen.routeName: (ctx) => AuthenticationScreen(),
       },
     );
   }

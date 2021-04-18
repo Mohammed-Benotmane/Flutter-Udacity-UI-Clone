@@ -48,8 +48,8 @@ class CustomNavBar extends StatelessWidget {
           ),
           SizedBox(width: 25),
           TextButton(
-            onPressed: () => Navigator.of(context)
-                .pushNamed(AuthenticationScreen.routeName),
+            onPressed: () =>
+                Navigator.of(context).pushNamed(AuthenticationScreen.routeName),
             child: Text(
               'GET STARTED',
               style: TextStyle(

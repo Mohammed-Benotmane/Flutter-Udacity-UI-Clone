@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:udacity_clone/widgets/custom_card.dart';
 
 class CustomBody extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Padding(

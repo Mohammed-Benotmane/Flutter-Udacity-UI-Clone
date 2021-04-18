@@ -39,7 +39,6 @@ class CustomCard extends StatelessWidget {
                 buttonText.toUpperCase(),
                 style: TextStyle(
                     fontFamily: 'OpenSans',
-
                     color: Colors.white,
                     fontSize: 12,
                     letterSpacing: 1.5,
@@ -51,7 +50,8 @@ class CustomCard extends StatelessWidget {
                 padding: MaterialStateProperty.all<EdgeInsets>(
                     EdgeInsets.symmetric(horizontal: 30, vertical: 25)),
                 elevation: MaterialStateProperty.all<double>(5),
-                shadowColor: MaterialStateProperty.all<Color>(Const.udacityBlue),
+                shadowColor:
+                    MaterialStateProperty.all<Color>(Const.udacityBlue),
               ),
             ),
             SizedBox(height: 25),
