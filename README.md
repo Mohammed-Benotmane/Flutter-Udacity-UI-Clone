@@ -5,7 +5,7 @@
 
 ## Description:
 
-Udacity UI Clone made with Flutter Web to try Flutter 2.0.
+Udacity UI Clone made with Flutter Web (Flutter 2.0).
 
 ## ScreenShots:
 
