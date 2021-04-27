@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:udacity_clone/const.dart';
 import 'package:udacity_clone/screens/authentication_screen.dart';
+import 'package:udacity_clone/screens/home_screen.dart';
 import 'package:udacity_clone/widgets/custom_drop_down.dart';
 
 class CustomNavBar extends StatelessWidget {
@@ -14,7 +15,9 @@ class CustomNavBar extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 15),
       child: Row(
         children: [
-          Image.asset('assets/udacity.png', width: 200),
+          InkWell(
+              onTap: ()=>Navigator.of(context).pushNamed(HomeScreen.routeName),
+              hoverColor: Colors.transparent,child: Image.asset('assets/udacity.png', width: 200)),
           Spacer(),
           CustomDropDown('Programs'),
           SizedBox(width: 25),
